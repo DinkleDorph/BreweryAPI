@@ -17,5 +17,16 @@ be interested to see the inner workings of Kegshoe's APIs in PHP 😉 sounds JUI
 
 Hope to speak with whoever is reading this soon!
 
+TO RUN:
+> npm install
+> npm start
+Runs on port 3000 by default.
+
+API ROUTE EXAMPLES:
+> localhost:3000/type/
+> localhost:3000/type/micro
+> localhost:3000/state/f
+> localhost:3000/state/new_york
+
 - Max
 June 01, 2022

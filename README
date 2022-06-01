@@ -1,0 +1,7 @@
+June 01, 2022
+Max Morse
+
+
+
+MOCK SQL QUERY:
+    select * from breweries where brewery_type = "micro" and country = "Canada";

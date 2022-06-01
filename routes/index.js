@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-const stateRouter = require("./state");
-const typeRouter = require("./type");
+const stateRouter = require("./state");                            // added this
+const typeRouter = require("./type");                              // added this
 
-router.use("/state", stateRouter);
-router.use("/type", typeRouter);
+router.use("/state", stateRouter);                                 // added this
+router.use("/type", typeRouter);                                   // added this
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

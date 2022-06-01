@@ -1,7 +1,21 @@
-June 01, 2022
-Max Morse
-
-
-
 MOCK SQL QUERY:
     select * from breweries where brewery_type = "micro" and country = "Canada";
+
+Took roughly 2 hours, didn't really run into any problems. Can't think of any 
+notable decisions I made as there's no real content here haha. Added 2 new 
+routers (and their routes), some basic messages to show the user when they hit 
+the routes. Let me know if you have any questions 🙂
+
+The brewery API only accepts certain values for the "type", so if the user sends 
+a bad value through and the brewery API gives us an error, I cought it with a 
+general 400 error to mask the crap the brewery API gives us. Probably don't need 
+(or want) to do this if this API was only used internally in your Kegshoe app, 
+for example. 
+
+I've only built an API in JS before, which is why I picked it for this test. I'd 
+be interested to see the inner workings of Kegshoe's APIs in PHP 😉 sounds JUICY
+
+Hope to speak with whoever is reading this soon!
+
+- Max
+June 01, 2022

@@ -12,7 +12,7 @@ router.get("/ping", (req, res, next) =>
 
 router.get("/:input", (req, res, next) =>
 {
-   // basic route validation
+   // basic route validation >> useless
    if (req.params.input !== "" && req.params.input != null)
    {
       // pull data
@@ -23,16 +23,24 @@ router.get("/:input", (req, res, next) =>
       })
       .catch((error) => 
       {
-         return res.status(400).json(error);
+         return res.status(400).json(
+         {
+            "error": "Bad Request. Make sure you provided a valid search term."
+         });
       });
    }
    else 
    {
-      return res.status(400).json(
+      return res.status(500).json(
       {
-         "error": "Bad Request. Make sure you provided a search term."
+         "error": "Interal error."
       });
    }
+});
+
+router.get("/", (req, res, next) => 
+{
+   return res.status(200).send("You've reached the state route B)");
 });
 
 module.exports = router;
